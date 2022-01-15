@@ -1,0 +1,102 @@
+﻿<UserControl x:Class="KckProject3.Views.BuyGameFirstScreen"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:KckProject3.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Style="{StaticResource MainGrid}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="12*"/>
+            <ColumnDefinition Width="12*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="1.5*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Style="{StaticResource MainTextBlock}" Grid.Row="1" Grid.Column="1" Text="Choose your payment method" FontSize="20"></TextBlock>
+        <TextBlock x:Name="ChosenPaymentMethodTb" Style="{StaticResource MainTextBlock}" Grid.Row="3" Grid.Column="1" Text="Choose your payment method" FontSize="16"></TextBlock>
+        <Grid Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="4*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="4*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="4*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="4*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="12*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <Button x:Name="PayPalButton" Style="{StaticResource ButtonStandard}" Grid.Row="1" Grid.Column="0" FontSize="18" Click="PayPalButton_Click">
+                <Image x:Name="PayPalImage" Source="../Images/paypalLogo.png"/>
+            </Button>
+            <Button x:Name="VisaButton" Style="{StaticResource ButtonStandard}" Grid.Row="1" Grid.Column="2" FontSize="18" Click="VisaButton_Click">
+                <Image x:Name="VisaImage" Source="../Images/visaLogo.png"/>
+            </Button>
+            <Button x:Name="MasterCardButton" Style="{StaticResource ButtonStandard}" Grid.Row="1" Grid.Column="4" FontSize="18" Click="MasterCardButton_Click">
+                <Image x:Name="MasterCardImage" Source="../Images/mastercardLogo.png"/>
+            </Button>
+            <Button x:Name="PaySafeCardButton" Style="{StaticResource ButtonStandard}" Grid.Row="1" Grid.Column="6" FontSize="18" Click="PaySafeCardButton_Click">
+                <Image x:Name="PaySafeCardImage" Source="../Images/paySafeCardLogo.png"/>
+            </Button>
+        </Grid>
+        <Grid Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1.8*"/>
+                <ColumnDefinition Width="16*"/>
+                <ColumnDefinition Width="4*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="6*"/>
+                <RowDefinition Height="2*"/>
+            </Grid.RowDefinitions>
+            <CheckBox Grid.Row="1" Grid.Column="0">
+                <CheckBox.LayoutTransform>
+                    <ScaleTransform ScaleX="3" ScaleY="4" />
+                </CheckBox.LayoutTransform>
+            </CheckBox>
+            <TextBlock Style="{StaticResource MainTextBlock}" Grid.Row="1" Grid.Column="1" Text="Remember my payment method next time" FontSize="14">
+            </TextBlock>
+        </Grid>
+        <Grid Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="4*"/>
+                <RowDefinition Height="6*"/>
+                <RowDefinition Height="4*"/>
+            </Grid.RowDefinitions>
+            <ProgressBar Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Foreground="Green" Value="33.3"></ProgressBar>
+        </Grid>
+        <Grid Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="8*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="6*"/>
+                <RowDefinition Height="2*"/>
+            </Grid.RowDefinitions>
+            <Button x:Name="NextButton" Style="{StaticResource ButtonStandard}" Grid.Row="1" Grid.Column="4" FontSize="18" Click="NextButton_Click">
+                <TextBlock Style="{StaticResource MainTextBlock}" Grid.Row="1" Grid.Column="1" Text="&gt;&gt;" FontSize="14"/>
+            </Button>
+        </Grid>
+    </Grid>
+</UserControl>

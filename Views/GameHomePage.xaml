@@ -1,0 +1,110 @@
+﻿<UserControl x:Class="KckProject3.Views.GameHomePage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:KckProject3.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="720" d:DesignWidth="1280">
+    <Grid Style="{StaticResource MainGrid}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="16*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="12*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="12*"/>
+            <RowDefinition Height="8*"/>
+            <RowDefinition Height="8*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <MediaElement x:Name="trailerME" Grid.Row="1" Grid.Column="1" Source="../Videos/forzaTrailer_01.mp4" LoadedBehavior="Manual" MouseUp="Grid_MouseUp"/>
+        <Grid Grid.Row="1" Grid.Column="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Image x:Name="gameLogo" Grid.Column="0" Stretch="Fill" Source="../Images/forzaLogo.png" Grid.ColumnSpan="2"></Image>
+            <TextBlock Style="{StaticResource MainTextBlock}" Grid.Row="1" Grid.Column="0" Text="Name" FontSize="16"></TextBlock>
+            <TextBlock Style="{StaticResource MainTextBlock}" Grid.Row="2" Grid.Column="0" Text="Release Year" FontSize="16"></TextBlock>
+            <TextBlock Style="{StaticResource MainTextBlock}" Grid.Row="3" Grid.Column="0" Text="Developer" FontSize="16"></TextBlock>
+            <TextBlock Style="{StaticResource MainTextBlock}" Grid.Row="4" Grid.Column="0" Text="Publisher" FontSize="16"></TextBlock>
+            <TextBlock Style="{StaticResource MainTextBlock}" Grid.Row="5" Grid.Column="0" Text="Platform" FontSize="16"></TextBlock>
+            <TextBlock x:Name="nametb" Style="{StaticResource MainTextBlock}" Grid.Row="1" Grid.Column="1" Text="Forza Horizon 5" FontSize="16"></TextBlock>
+            <TextBlock x:Name="releasedatetb" Style="{StaticResource MainTextBlock}" Grid.Row="2" Grid.Column="1" Text="RAWRA" FontSize="16"></TextBlock>
+            <Button Style="{StaticResource ButtonInvisible}" x:Name="DeveloperButton" Grid.Column="1" Grid.Row="3" HorizontalContentAlignment="Left" Click="DeveloperButton_Click">
+                <TextBlock x:Name="developertb" Style="{StaticResource TextBlockClickable}" Text="RAWRA" FontSize="16"></TextBlock>
+            </Button>
+            <Button Style="{StaticResource ButtonInvisible}" x:Name="PublisherButton" Grid.Column="1" Grid.Row="4" HorizontalContentAlignment="Left" Click="PublisherButton_Click">
+                <TextBlock x:Name="publishertb" Style="{StaticResource TextBlockClickable}" Text="RAWRA" FontSize="16"></TextBlock>
+            </Button>
+            <Grid Grid.Row="5" Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="4*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <TextBlock x:Name="platfromtb" Style="{StaticResource MainTextBlock}" Grid.Row="0" Grid.Column="0" Text="Windows" FontSize="16" Grid.RowSpan="3"></TextBlock>
+                <Image Grid.Row="1" Grid.Column="1" Source="../Images/windowsLogo.png"/>
+            </Grid>
+        </Grid>
+        <TextBlock x:Name="describtionTb" Style="{StaticResource MainTextBlock}" TextWrapping="Wrap" FontSize="20" Grid.Row="2" Grid.Column="1">Your greatest Horizon adventure awaits. 
+                       Travel through Mexico's bustling open world and enjoy the scenery while driving the world's best cars. 
+                       Get started with Horizon today by adding the game to your wishlist.
+        </TextBlock>
+        <Grid Grid.Row="2" Grid.Column="3">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="4*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="4*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="4*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            
+            <Grid Grid.Row="1" Grid.Column="1" Style="{StaticResource MainGrid}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="4*"/>
+                    <ColumnDefinition Width="4*"/>
+                    <ColumnDefinition Width="4*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <TextBlock Style="{StaticResource MainTextBlock}" x:Name="FirstGamePromotion" HorizontalAlignment="Center" 
+                           FontWeight="Bold" FontSize="16" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" Text="-10%"/>
+                <TextBlock Style="{StaticResource GrayTextBlock}" x:Name="FirstGameLastPrice" TextDecorations="Strikethrough" FontSize="16" 
+                           Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" Text="150 zł" HorizontalAlignment="Center" />
+                <TextBlock Style="{StaticResource MainTextBlock}" HorizontalAlignment="Center" x:Name="FirstGameNewPrice" FontSize="16" Grid.Row="0" Grid.Column="2" VerticalAlignment="Center" Text="135 zł"/>
+            </Grid>
+            <Button x:Name="BuyButton" Style="{StaticResource ButtonStandard}" Grid.Column="1" Grid.Row="2" Click="BuyButton_Click">
+                <TextBlock Style="{StaticResource MainTextBlock}" Text="Buy" FontSize="24"/>
+            </Button>
+            <Button Style="{StaticResource ButtonStandard}" Grid.Column="1" Grid.Row="4">
+                <TextBlock Style="{StaticResource MainTextBlock}" Text="Add To Wishlist" FontSize="24"/>
+            </Button>
+        </Grid>
+    </Grid>
+</UserControl>

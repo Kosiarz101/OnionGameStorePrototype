@@ -1,0 +1,211 @@
+﻿<UserControl x:Class="KckProject3.Views.ShopCartPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:KckProject3.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="720" d:DesignWidth="1280">
+    <Grid Style="{StaticResource MainGrid}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="12*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="6*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="6*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="12*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="12*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="12*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="12*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Style="{StaticResource MainTextBlock}" Text="Shop Cart" Grid.Column="1" Grid.Row="0" VerticalAlignment="Center" FontSize="25"></TextBlock>
+        <Border Grid.Row="2" Grid.Column="3" BorderBrush="Green" BorderThickness="4" CornerRadius="20">
+            <Grid Grid.Row="2" Grid.Column="3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="12*"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="9*"/>
+                    <RowDefinition Height="9*"/>
+                    <RowDefinition Height="9*"/>
+                    <RowDefinition Height="1*"/>
+                </Grid.RowDefinitions>
+                <TextBlock Style="{StaticResource MainTextBlock}" x:Name="GamesSaveMoney" HorizontalAlignment="Center"  Grid.Column="1" Grid.Row="0" Text="You Save: 20 zł" FontSize="16"></TextBlock>
+                <TextBlock Style="{StaticResource MainTextBlock}" x:Name="GamesWholePrice" HorizontalAlignment="Center" Grid.Column="1" Grid.Row="1" Text="Whole Price: 220 zł" FontSize="16"></TextBlock>
+                <Button Style="{StaticResource ButtonStandard}" Grid.Column="1" Grid.Row="2" Click="Button_Click">
+                    <TextBlock Style="{StaticResource MainTextBlock}" x:Name="GamesBuyButton" Text="Buy" FontSize="20"></TextBlock>
+                </Button>
+            </Grid>
+        </Border>
+        <Border x:Name="Game1" Grid.Column="1" Grid.Row="2" BorderBrush="White" BorderThickness="4" CornerRadius="20">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="12*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="12*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="12*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="6*"/>
+                    <ColumnDefinition Width="0.5*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="12*"/>
+                    <RowDefinition Height="1*"/>
+                </Grid.RowDefinitions>
+                <Image x:Name="Game1Image" Grid.Column="0" Grid.Row="1" Source="../Images/battlefield2042.jpg"></Image>
+                <TextBlock Style="{StaticResource MainTextBlock}" x:Name="Game1Title" Grid.Column="2" Grid.Row="1" Text="Battlefield 2042" FontSize="16"></TextBlock>
+                <Grid Grid.Row="1" Grid.Column="4">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="4*"/>
+                        <RowDefinition Height="12*"/>
+                        <RowDefinition Height="12*"/>
+                        <RowDefinition Height="12*"/>
+                        <RowDefinition Height="4*"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Style="{StaticResource MainTextBlock}" x:Name="Game1Promotion" FontWeight="Bold" Grid.Column="0" Grid.Row="1" Text="Battlefield 2042" FontSize="16"></TextBlock>
+                    <TextBlock Style="{StaticResource MainTextBlock}" x:Name="Game1CurrentPrice" VerticalAlignment="Center"  Grid.Column="0" Grid.Row="2" Text="Battlefield 2042" FontSize="16"></TextBlock>
+                    <TextBlock Style="{StaticResource GrayTextBlock}" x:Name="Game1OriginalPrice" VerticalAlignment="Center" TextDecorations="Strikethrough" Grid.Column="0" 
+                               Grid.Row="3" Text="Battlefield 2042" FontSize="16"></TextBlock>
+                </Grid>
+                <Button x:Name="Game1Delete" Style="{StaticResource ButtonStandard}" Grid.Column="6" Grid.Row="1" Click="Game1Delete_Click">
+                    <Image Source="../Images/garbageCanIcon.png"></Image>
+                </Button>
+            </Grid>
+        </Border>
+        <Border x:Name="Game2" Grid.Column="1" Grid.Row="4" BorderBrush="White" BorderThickness="4" CornerRadius="20">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="12*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="12*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="12*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="6*"/>
+                    <ColumnDefinition Width="0.5*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="12*"/>
+                    <RowDefinition Height="1*"/>
+                </Grid.RowDefinitions>
+                <Image x:Name="Game2Image" Grid.Column="0" Grid.Row="1" Source="../Images/forzahorizon5.jfif"></Image>
+                <TextBlock Style="{StaticResource MainTextBlock}" x:Name="Game2Title" Grid.Column="2" Grid.Row="1" Text="Forza Horizon 5" FontSize="16"></TextBlock>
+                <Grid Grid.Row="1" Grid.Column="4">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="4*"/>
+                        <RowDefinition Height="12*"/>
+                        <RowDefinition Height="12*"/>
+                        <RowDefinition Height="12*"/>
+                        <RowDefinition Height="4*"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Style="{StaticResource MainTextBlock}" x:Name="Game2Promotion" FontWeight="Bold" Grid.Column="0" Grid.Row="1" Text="Battlefield 2042" FontSize="16"></TextBlock>
+                    <TextBlock Style="{StaticResource MainTextBlock}" x:Name="Game2CurrentPrice" VerticalAlignment="Center"  Grid.Column="0" Grid.Row="2" Text="Battlefield 2042" FontSize="16"></TextBlock>
+                    <TextBlock Style="{StaticResource GrayTextBlock}" x:Name="Game2OriginalPrice" VerticalAlignment="Center" TextDecorations="Strikethrough" Grid.Column="0" 
+                               Grid.Row="3" Text="Battlefield 2042" FontSize="16"></TextBlock>
+                </Grid>
+                <Button x:Name="Game2Delete" Style="{StaticResource ButtonStandard}" Grid.Column="6" Grid.Row="1" Click="Game2Delete_Click">
+                    <Image Source="../Images/garbageCanIcon.png"></Image>
+                </Button>
+            </Grid>
+        </Border>
+        <Border x:Name="Game3" Grid.Column="1" Grid.Row="6" BorderBrush="White" BorderThickness="4" CornerRadius="20">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="12*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="12*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="12*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="6*"/>
+                    <ColumnDefinition Width="0.5*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="12*"/>
+                    <RowDefinition Height="1*"/>
+                </Grid.RowDefinitions>
+                <Image x:Name="Game3Image" Grid.Column="0" Grid.Row="1" Source="../Images/civilization6.jpg"></Image>
+                <TextBlock Style="{StaticResource MainTextBlock}" x:Name="Game3Title" Grid.Column="2" Grid.Row="1" Text="Civilization 6" FontSize="16"></TextBlock>
+                <Grid Grid.Row="1" Grid.Column="4">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="4*"/>
+                        <RowDefinition Height="12*"/>
+                        <RowDefinition Height="12*"/>
+                        <RowDefinition Height="12*"/>
+                        <RowDefinition Height="4*"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Style="{StaticResource MainTextBlock}" x:Name="Game3Promotion" FontWeight="Bold" Grid.Column="0" Grid.Row="1" Text="Battlefield 2042" FontSize="16"></TextBlock>
+                    <TextBlock Style="{StaticResource MainTextBlock}" x:Name="Game3CurrentPrice" VerticalAlignment="Center"  Grid.Column="0" Grid.Row="2" Text="Battlefield 2042" FontSize="16"></TextBlock>
+                    <TextBlock Style="{StaticResource GrayTextBlock}" x:Name="Game3OriginalPrice" VerticalAlignment="Center" TextDecorations="Strikethrough" Grid.Column="0" 
+                               Grid.Row="3" Text="Battlefield 2042" FontSize="16"></TextBlock>
+                </Grid>
+                <Button x:Name="Game3Delete" Style="{StaticResource ButtonStandard}" Grid.Column="6" Grid.Row="1" Click="Game3Delete_Click">
+                    <Image Source="../Images/garbageCanIcon.png"></Image>
+                </Button>
+            </Grid>
+        </Border>
+        <Border x:Name="Game4" Grid.Column="1" Grid.Row="8" BorderBrush="White" BorderThickness="4" CornerRadius="20">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="12*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="12*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="12*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="6*"/>
+                    <ColumnDefinition Width="0.5*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="12*"/>
+                    <RowDefinition Height="1*"/>
+                </Grid.RowDefinitions>
+                <Image x:Name="Game4Image" Grid.Column="0" Grid.Row="1" Source="../Images/battlefield2042.jpg"></Image>
+                <TextBlock Style="{StaticResource MainTextBlock}" x:Name="Game4Title" Grid.Column="2" Grid.Row="1" Text="Battlefield 2042" FontSize="16"></TextBlock>
+                <Grid Grid.Row="1" Grid.Column="4">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="4*"/>
+                        <RowDefinition Height="12*"/>
+                        <RowDefinition Height="12*"/>
+                        <RowDefinition Height="12*"/>
+                        <RowDefinition Height="4*"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Style="{StaticResource MainTextBlock}" x:Name="Game4Promotion" FontWeight="Bold" Grid.Column="0" Grid.Row="1" Text="Battlefield 2042" FontSize="16"></TextBlock>
+                    <TextBlock Style="{StaticResource MainTextBlock}" x:Name="Game4CurrentPrice" VerticalAlignment="Center"  Grid.Column="0" Grid.Row="2" Text="Battlefield 2042" FontSize="16"></TextBlock>
+                    <TextBlock Style="{StaticResource GrayTextBlock}" x:Name="Game4OriginalPrice" VerticalAlignment="Center" TextDecorations="Strikethrough" Grid.Column="0" 
+                               Grid.Row="3" Text="Battlefield 2042" FontSize="16"></TextBlock>
+                </Grid>
+                <Button x:Name="Game4Delete" Style="{StaticResource ButtonStandard}" Grid.Column="6" Grid.Row="1" Click="Game4Delete_Click">
+                    <Image Source="../Images/garbageCanIcon.png"></Image>
+                </Button>
+            </Grid>
+        </Border>
+    </Grid>
+</UserControl>

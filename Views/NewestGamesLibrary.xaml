@@ -1,0 +1,126 @@
+﻿<UserControl x:Class="KckProject3.Views.NewestGamesLibrary"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:KckProject3.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Style="{StaticResource MainGrid}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="0*"/>
+            <RowDefinition Height="12*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="0*"/>
+            <RowDefinition Height="0*"/>
+            <RowDefinition Height="12*"/>
+            <RowDefinition Height="3*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Button Style="{StaticResource ButtonInvisible}" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left">
+            <TextBlock Style="{StaticResource TextBlockClickable}" Grid.Row="1" Grid.Column="2" Text="Newest Games" FontSize="25" VerticalAlignment="Center" Cursor="Hand" ></TextBlock>
+        </Button>
+        <!--Newest Game Images-->
+        <Grid Grid.Row="3" Grid.Column="1" Style="{StaticResource MainGrid}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="12*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="12*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="12*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="4*"/>
+                <RowDefinition Height="12*"/>
+                <RowDefinition Height="4*"/>
+            </Grid.RowDefinitions>
+            <Button x:Name="FirstGame" Style="{StaticResource ButtonStandard}" Grid.Row="0" Grid.Column="1" Grid.RowSpan="3" FontSize="25" MouseEnter="FirstGame_MouseEnter" MouseLeave="FirstGame_MouseLeave" Click="FirstGame_Click">
+                <Image x:Name="FirstGameImage" Source="../Images/battlefield2042.jpg"/>
+            </Button>
+            <Button x:Name="SecondGame" Style="{StaticResource ButtonStandard}" Grid.Row="0" Grid.Column="3" Grid.RowSpan="3" FontSize="25" MouseEnter="SecondGame_MouseEnter" MouseLeave="SecondGame_MouseLeave" Click="SecondGame_Click">
+                <Image x:Name="SecondGameImage" Source="../Images/forzahorizon5.jfif"/>
+            </Button>
+            <Button x:Name="ThirdGame" Style="{StaticResource ButtonStandard}" Grid.Row="0" Grid.Column="5" Grid.RowSpan="3" FontSize="25" MouseEnter="ThirdGame_MouseEnter" MouseLeave="ThirdGame_MouseLeave" Click="ThirdGame_Click">
+                <Image x:Name="ThirdGameImage" Source="../Images/battlefield2042.jpg"/>
+            </Button>
+        </Grid>
+        <!--Newest Game Details-->
+        <Grid Grid.Row="4" Grid.Column="1" Style="{StaticResource MainGrid}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="8*"/>
+                <ColumnDefinition Width="4*"/>
+                <ColumnDefinition Width="8*"/>
+                <ColumnDefinition Width="4*"/>
+                <ColumnDefinition Width="8*"/>
+                <ColumnDefinition Width="3*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <TextBlock Style="{StaticResource MainTextBlock}" x:Name="FirstGameTitle" Grid.Row="0" Grid.Column="1" VerticalAlignment="Center"/>
+            <TextBlock Style="{StaticResource MainTextBlock}" x:Name="FirstGameDeveloper" Grid.Row="1" Grid.Column="1" VerticalAlignment="Center"/>
+            <TextBlock Style="{StaticResource MainTextBlock}" x:Name="SecondGameTitle" Grid.Row="0" Grid.Column="3" VerticalAlignment="Center"/>
+            <TextBlock Style="{StaticResource MainTextBlock}" x:Name="SecondGameDeveloper" Grid.Row="1" Grid.Column="3" VerticalAlignment="Center"/>
+            <TextBlock Style="{StaticResource MainTextBlock}" x:Name="ThirdGameTitle" Grid.Row="0" Grid.Column="5" VerticalAlignment="Center"/>
+            <TextBlock Style="{StaticResource MainTextBlock}" x:Name="ThirdGameDeveloper" Grid.Row="1" Grid.Column="5" VerticalAlignment="Center"/>
+        </Grid>
+        <!--Special Offers Games-->
+        <Grid Grid.Row="7" Grid.Column="1" Style="{StaticResource MainGrid}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="12*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="12*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="12*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="4*"/>
+                <RowDefinition Height="12*"/>
+                <RowDefinition Height="4*"/>
+            </Grid.RowDefinitions>
+            <Button x:Name="FourthGame" Style="{StaticResource ButtonStandard}" Grid.Row="0" Grid.Column="1" Grid.RowSpan="3" FontSize="25" MouseEnter="FourthGame_MouseEnter" MouseLeave="FourthGame_MouseLeave" Click="FourthGame_Click">
+                <Image x:Name="FourthGameImage" Source="../Images/prey.jpg" />
+            </Button>
+            <Button x:Name="FifthGame" Style="{StaticResource ButtonStandard}" Grid.Row="0" Grid.Column="3" Grid.RowSpan="3" FontSize="25" MouseEnter="FifthGame_MouseEnter" MouseLeave="FifthGame_MouseLeave" Click="FifthGame_Click">
+                <Image x:Name="FifthGameImage" Source="../Images/thief.jpg"/>
+            </Button>
+            <Button x:Name="SixthGame" Style="{StaticResource ButtonStandard}" Grid.Row="0" Grid.Column="5" Grid.RowSpan="3" FontSize="25" MouseEnter="SixthGame_MouseEnter" MouseLeave="SixthGame_MouseLeave" Click="SixthGame_Click">
+                <Image x:Name="SixthGameImage" Source="../Images/civilization6.jpg"/>
+            </Button>
+        </Grid>
+        <!--Special Offers Game Details-->
+        <Grid Grid.Row="8" Grid.Column="1" Style="{StaticResource MainGrid}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="8*"/>
+                <ColumnDefinition Width="4*"/>
+                <ColumnDefinition Width="8*"/>
+                <ColumnDefinition Width="4*"/>
+                <ColumnDefinition Width="8*"/>
+                <ColumnDefinition Width="3*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <TextBlock Style="{StaticResource MainTextBlock}" x:Name="FourthGameTitle" Grid.Row="0" Grid.Column="1" VerticalAlignment="Center"/>
+            <TextBlock Style="{StaticResource MainTextBlock}" x:Name="FourthGameDeveloper" Grid.Row="1" Grid.Column="1" VerticalAlignment="Center"/>
+            <TextBlock Style="{StaticResource MainTextBlock}" x:Name="FifthGameTitle" Grid.Row="0" Grid.Column="3" VerticalAlignment="Center"/>
+            <TextBlock Style="{StaticResource MainTextBlock}" x:Name="FifthGameDeveloper" Grid.Row="1" Grid.Column="3" VerticalAlignment="Center"/>
+            <TextBlock Style="{StaticResource MainTextBlock}" x:Name="SixthGameTitle" Grid.Row="0" Grid.Column="5" VerticalAlignment="Center"/>
+            <TextBlock Style="{StaticResource MainTextBlock}" x:Name="SixthGameDeveloper" Grid.Row="1" Grid.Column="5" VerticalAlignment="Center"/>
+        </Grid>
+    </Grid>
+</UserControl>

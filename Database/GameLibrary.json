@@ -1,0 +1,37 @@
+[
+  {
+    "Name": "Battlefield 2042",
+    "Developer": {
+      "Name": "Dice",
+      "Publisher": {
+        "Name": "Electronics Arts",
+        "Logo": "eaLogo.png",
+        "LogoBackgroundColor": "AliceBlue",
+        "Describtion": "Electronic Arts Inc. (EA) is an American video game company headquartered in Redwood City, California. It is the second-largest gaming company in the Americas and Europe by revenue and market capitalization after Activision Blizzard and ahead of Take-Two Interactive, and Ubisoft as of May 2020.",
+        "Country": "United States",
+        "CreationYear": "1982-05-10T00:00:00"
+      },
+      "Country": "Sweden",
+      "Describtion": "EA Digital Illusions CE AB (trade name: DICE) is a Swedish video game developer based in Stockholm. The company was founded in 1992 and has been a subsidiary of Electronic Arts since 2006. Its releases include the Battlefield, Mirror's Edge and Star Wars Battlefront series. Through their Frostbite Labs division, the company also develops the Frostbite game engine.",
+      "Logo": "dice2.png",
+      "LogoBackgroundColor": "#4DDABE",
+      "CreationYear": "1992-05-01T00:00:00"
+    },
+    "Publisher": {
+      "Name": "Electronics Arts",
+      "Logo": "eaLogo.png",
+      "LogoBackgroundColor": "AliceBlue",
+      "Describtion": "Electronic Arts Inc. (EA) is an American video game company headquartered in Redwood City, California. It is the second-largest gaming company in the Americas and Europe by revenue and market capitalization after Activision Blizzard and ahead of Take-Two Interactive, and Ubisoft as of May 2020.",
+      "Country": "United States",
+      "CreationYear": "1982-05-10T00:00:00"
+    },
+    "PublishYear": "2021-11-19T00:00:00",
+    "Price": 250.0,
+    "Promotion": 0.0,
+    "Image": "battlefield2042.jpg",
+    "Platform": "Windows",
+    "Logo": "battlefield2042Logo.png",
+    "Trailer": "../Videos/bfTrailer.mp4",
+    "Describtion": "Battlefield ™ 2042 is a first-person shooter that brings back the all-out war that this iconic series of games is famous for. In the future, the world order was shaken. Changing battlefields require adaptation and overcoming difficulties with the help of your squad and modern arsenal."
+  }
+]

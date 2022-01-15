@@ -1,0 +1,70 @@
+[
+  {
+    "Name": "Battlefield 2042",
+    "Developer": {
+      "Name": "Dice",
+      "Publisher": {
+        "Name": "Electronics Arts",
+        "Logo": "eaLogo.png",
+        "LogoBackgroundColor": "AliceBlue",
+        "Describtion": "EA Digital Illusions CE AB (trade name: DICE) is a Swedish video game developer based in Stockholm. The company was founded in 1992 and has been a subsidiary of Electronic Arts since 2006. Its releases include the Battlefield, Mirror's Edge and Star Wars Battlefront series. Through their Frostbite Labs division, the company also develops the Frostbite game engine.",
+        "Country": "United States",
+        "CreationYear": "1982-05-10T00:00:00"
+      },
+      "Country": "Sweden",
+      "Describtion": null,
+      "Logo": "dice2.png",
+      "LogoBackgroundColor": "#4DDABE",
+      "CreationYear": "1992-05-01T00:00:00"
+    },
+    "Publisher": {
+      "Name": "Electronics Arts",
+      "Logo": "eaLogo.png",
+      "LogoBackgroundColor": "AliceBlue",
+      "Describtion": "EA Digital Illusions CE AB (trade name: DICE) is a Swedish video game developer based in Stockholm. The company was founded in 1992 and has been a subsidiary of Electronic Arts since 2006. Its releases include the Battlefield, Mirror's Edge and Star Wars Battlefront series. Through their Frostbite Labs division, the company also develops the Frostbite game engine.",
+      "Country": "United States",
+      "CreationYear": "1982-05-10T00:00:00"
+    },
+    "PublishYear": "2021-11-19T00:00:00",
+    "Price": 250.0,
+    "Promotion": 0,
+    "Image": "../Images/battlefield2042.jpg",
+    "Platform": "Windows",
+    "Logo": "../Images/forzaLogo.png",
+    "Trailer": "../Videos/bfTrailer.mp4"
+  },
+  {
+    "Name": "Forza Horizon 5",
+    "Developer": {
+      "Name": "Dice",
+      "Publisher": {
+        "Name": "Electronics Arts",
+        "Logo": "eaLogo.png",
+        "LogoBackgroundColor": "AliceBlue",
+        "Describtion": "EA Digital Illusions CE AB (trade name: DICE) is a Swedish video game developer based in Stockholm. The company was founded in 1992 and has been a subsidiary of Electronic Arts since 2006. Its releases include the Battlefield, Mirror's Edge and Star Wars Battlefront series. Through their Frostbite Labs division, the company also develops the Frostbite game engine.",
+        "Country": "United States",
+        "CreationYear": "1982-05-10T00:00:00"
+      },
+      "Country": "Sweden",
+      "Describtion": null,
+      "Logo": "dice2.png",
+      "LogoBackgroundColor": "#4DDABE",
+      "CreationYear": "1992-05-01T00:00:00"
+    },
+    "Publisher": {
+      "Name": "Electronics Arts",
+      "Logo": "eaLogo.png",
+      "LogoBackgroundColor": "AliceBlue",
+      "Describtion": "EA Digital Illusions CE AB (trade name: DICE) is a Swedish video game developer based in Stockholm. The company was founded in 1992 and has been a subsidiary of Electronic Arts since 2006. Its releases include the Battlefield, Mirror's Edge and Star Wars Battlefront series. Through their Frostbite Labs division, the company also develops the Frostbite game engine.",
+      "Country": "United States",
+      "CreationYear": "1982-05-10T00:00:00"
+    },
+    "PublishYear": "2021-11-04T00:00:00",
+    "Price": 220.0,
+    "Promotion": 0,
+    "Image": "../Images/forzahorizon5.jfif",
+    "Platform": "Windows",
+    "Logo": "../Images/forzaLogo.png",
+    "Trailer": "../Videos/forzaTrailer_01.mp4"
+  }
+]
