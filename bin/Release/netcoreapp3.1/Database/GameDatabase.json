@@ -1,0 +1,142 @@
+[
+  {
+    "Name": "Battlefield 2042",
+    "Developer": {
+      "Name": "Dice",
+      "Publisher": {
+        "Name": "Electronics Arts",
+        "Logo": "eaLogo.png",
+        "LogoBackgroundColor": "AliceBlue",
+        "Describtion": "Electronic Arts Inc. (EA) is an American video game company headquartered in Redwood City, California. It is the second-largest gaming company in the Americas and Europe by revenue and market capitalization after Activision Blizzard and ahead of Take-Two Interactive, and Ubisoft as of May 2020.",
+        "Country": "United States",
+        "CreationYear": "1982-05-10T00:00:00"
+      },
+      "Country": "Sweden",
+      "Describtion": "EA Digital Illusions CE AB (trade name: DICE) is a Swedish video game developer based in Stockholm. The company was founded in 1992 and has been a subsidiary of Electronic Arts since 2006. Its releases include the Battlefield, Mirror's Edge and Star Wars Battlefront series. Through their Frostbite Labs division, the company also develops the Frostbite game engine.",
+      "Logo": "dice2.png",
+      "LogoBackgroundColor": "#4DDABE",
+      "CreationYear": "1992-05-01T00:00:00"
+    },
+    "Publisher": {
+      "Name": "Electronics Arts",
+      "Logo": "eaLogo.png",
+      "LogoBackgroundColor": "AliceBlue",
+      "Describtion": "Electronic Arts Inc. (EA) is an American video game company headquartered in Redwood City, California. It is the second-largest gaming company in the Americas and Europe by revenue and market capitalization after Activision Blizzard and ahead of Take-Two Interactive, and Ubisoft as of May 2020.",
+      "Country": "United States",
+      "CreationYear": "1982-05-10T00:00:00"
+    },
+    "PublishYear": "2021-11-19T00:00:00",
+    "Price": 250.0,
+    "Promotion": 0.0,
+    "Image": "battlefield2042.jpg",
+    "Platform": "Windows",
+    "Logo": "battlefield2042Logo.png",
+    "Trailer": "../Videos/bfTrailer.mp4",
+    "Describtion": "Battlefield ™ 2042 is a first-person shooter that brings back the all-out war that this iconic series of games is famous for. In the future, the world order was shaken. Changing battlefields require adaptation and overcoming difficulties with the help of your squad and modern arsenal."
+  },
+  {
+    "Name": "Forza Horizon 5",
+    "Developer": {
+      "Name": "Playground Games",
+      "Publisher": {
+        "Name": "Xbox Games Studios",
+        "Logo": "xboxGamesStudiosLogo.png",
+        "LogoBackgroundColor": "AliceBlue",
+        "Describtion": "Xbox Game Studios (previously known as Microsoft Studios, Microsoft Game Studios, and Microsoft Games) is an American video game publisher and division of Microsoft based in Redmond, Washington. It was established in March 2000, spun out from an internal Games Group, for the development and publishing of video games for Microsoft Windows. It has since expanded to include games and other interactive entertainment for the namesake Xbox platforms, Windows Mobile and other mobile platforms, and web-based portals.",
+        "Country": "United States",
+        "CreationYear": "2000-03-01T00:00:00"
+      },
+      "Country": "England",
+      "Describtion": "Playground Games Limited is a British video game developer based in Leamington Spa, England. It is known for developing the Forza Horizon series, which is part of the larger Forza franchise. In 2018, Playground Games became part of Microsoft Studios (now known as Xbox Game Studios). They are also currently in development of the next game in the Fable series.",
+      "Logo": "playgroundGames.png",
+      "LogoBackgroundColor": "#42C548",
+      "CreationYear": "2010-01-01T00:00:00"
+    },
+    "Publisher": {
+      "Name": "Xbox Games Studios",
+      "Logo": "xboxGamesStudiosLogo.png",
+      "LogoBackgroundColor": "AliceBlue",
+      "Describtion": "Xbox Game Studios (previously known as Microsoft Studios, Microsoft Game Studios, and Microsoft Games) is an American video game publisher and division of Microsoft based in Redmond, Washington. It was established in March 2000, spun out from an internal Games Group, for the development and publishing of video games for Microsoft Windows. It has since expanded to include games and other interactive entertainment for the namesake Xbox platforms, Windows Mobile and other mobile platforms, and web-based portals.",
+      "Country": "United States",
+      "CreationYear": "2000-03-01T00:00:00"
+    },
+    "PublishYear": "2021-11-04T00:00:00",
+    "Price": 220.0,
+    "Promotion": 0.0,
+    "Image": "forzahorizon5.jfif",
+    "Platform": "Windows",
+    "Logo": "forzaLogo.png",
+    "Trailer": "../Videos/forzaTrailer_01.mp4",
+    "Describtion": "Your greatest Horizon adventure awaits. Travel through Mexico's bustling open world and enjoy the scenery while driving the world's best cars. Get started with Horizon today by adding the game to your wishlist."
+  },
+  {
+    "Name": "Civilization 6",
+    "Developer": {
+      "Name": "Firaxis Games",
+      "Publisher": {
+        "Name": "2k Games",
+        "Logo": "2kGames.png",
+        "LogoBackgroundColor": "AliceBlue",
+        "Describtion": "2K is an American video game publisher based in Novato, California. 2K was founded under Take-Two Interactive in January 2005 through the 2K Games and 2K Sports labels, following Take-Two Interactive's acquisition of Visual Concepts that same month. Originally based in New York City, it moved to Novato in 2007. A third label, 2K Play, was added in September 2007. 2K is governed by David Ismailer as president and Phil Dixon as COO. A motion capture studio for 2K is based in Petaluma, California.",
+        "Country": "United States",
+        "CreationYear": "2005-01-25T00:00:00"
+      },
+      "Country": "United States",
+      "Describtion": "Firaxis Games, Inc. is an American video game developer based in Sparks, Maryland. The company was founded in May 1996 by Sid Meier, Jeff Briggs and Brian Reynolds following their departure from MicroProse, Meier's earlier venture. They were acquired by Take-Two Interactive in August 2005, and subsequently became part of the publisher's 2K label. Firaxis Games is best known for developing the Civilization and XCOM series, as well as many other games bearing Meier's name.",
+      "Logo": "firaxisGameLogo.png",
+      "LogoBackgroundColor": "#AF3131",
+      "CreationYear": "1996-05-01T00:00:00"
+    },
+    "Publisher": {
+      "Name": "2k Games",
+      "Logo": "2kGames.png",
+      "LogoBackgroundColor": "AliceBlue",
+      "Describtion": "2K is an American video game publisher based in Novato, California. 2K was founded under Take-Two Interactive in January 2005 through the 2K Games and 2K Sports labels, following Take-Two Interactive's acquisition of Visual Concepts that same month. Originally based in New York City, it moved to Novato in 2007. A third label, 2K Play, was added in September 2007. 2K is governed by David Ismailer as president and Phil Dixon as COO. A motion capture studio for 2K is based in Petaluma, California.",
+      "Country": "United States",
+      "CreationYear": "2005-01-25T00:00:00"
+    },
+    "PublishYear": "2016-10-21T00:00:00",
+    "Price": 160.0,
+    "Promotion": 0.5,
+    "Image": "civilization6.jpg",
+    "Platform": "Windows",
+    "Logo": "civ6Logo.png",
+    "Trailer": "../Videos/civTrailer.mp4",
+    "Describtion": "Civilization VI provides brand new opportunities to interact with the world, expand your empire's boundaries, advance your culture, and compete with history's greatest leaders in the struggle to create a civilization that will stand the test of time."
+  },
+  {
+    "Name": "Thief",
+    "Developer": {
+      "Name": "Eidos Montreal",
+      "Publisher": {
+        "Name": "Square Enix",
+        "Logo": "squareEnixLogo.png",
+        "LogoBackgroundColor": "AliceBlue",
+        "Describtion": "Square Enix Holdings Co., Ltd.[a] is a Japanese entertainment conglomerate and video game company best known for its Final Fantasy, Dragon Quest and Kingdom Hearts role-playing video game franchises, among numerous others. Outside of video game publishing and development, it is also in the business of merchandise, arcade/amusement facilities and manga publication under its Gangan Comics brand.",
+        "Country": "Japan",
+        "CreationYear": "1975-09-22T00:00:00"
+      },
+      "Country": "Canada",
+      "Describtion": "Eidos-Montréal is a Canadian video game developer based in Montreal. The studio is owned by Square Enix Europe (formerly Eidos Interactive), a subsidiary of Square Enix.Eidos Interactive announced plans to open a Montreal-based subsidiary studio in February 2007.[1] Eidos-Montréal formally opened with general manager Stéphane D'Astous on 26 November 2007. According to D'Astous, unlike other video game development studios, Eidos-Montréal's development cycle as characterized by smaller teams (totalling to 350) working over a longer period.",
+      "Logo": "eidosMontreal.png",
+      "LogoBackgroundColor": "#31A3AF",
+      "CreationYear": "2007-11-26T00:00:00"
+    },
+    "Publisher": {
+      "Name": "Square Enix",
+      "Logo": "squareEnixLogo.png",
+      "LogoBackgroundColor": "AliceBlue",
+      "Describtion": "Square Enix Holdings Co., Ltd.[a] is a Japanese entertainment conglomerate and video game company best known for its Final Fantasy, Dragon Quest and Kingdom Hearts role-playing video game franchises, among numerous others. Outside of video game publishing and development, it is also in the business of merchandise, arcade/amusement facilities and manga publication under its Gangan Comics brand.",
+      "Country": "Japan",
+      "CreationYear": "1975-09-22T00:00:00"
+    },
+    "PublishYear": "2014-02-25T00:00:00",
+    "Price": 79.99,
+    "Promotion": 0.4,
+    "Image": "thief.jpg",
+    "Platform": "Windows",
+    "Logo": "thiefLogo.png",
+    "Trailer": "../Videos/thiefTrailer.mp4",
+    "Describtion": "Garrett, the Master Thief, steps out of the shadows into the City. In this treacherous place, where the Baron’s Watch spreads a rising tide of fear and oppression, his skills are the only things he can trust. Even the most cautious citizens and their best-guarded possessions are not safe from his reach."
+  }
+]
